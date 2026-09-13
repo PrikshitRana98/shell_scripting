@@ -16,3 +16,11 @@ else
     echo "Both are equal"
 fi
 
+
+# -eq → Equal
+# -ne → Not Equal
+# -gt → Greater Than
+# -lt → Less Than
+# -ge → Greater or Equal
+# -le → Less or Equal
+

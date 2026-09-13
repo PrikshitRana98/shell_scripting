@@ -20,5 +20,11 @@ echo "today is $(date)"
 backup_date=$(date +%Y-%m-%d)
 echo "Backup date: $backup_date"
 
+echo "___________________________________________"
+
+
+
+
+
 
 
