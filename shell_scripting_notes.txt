@@ -1,0 +1,13 @@
+error Handling
+
+set -e : Agar script ke andar koi command fail hoti hai, to Bash script ko stop kar do.
+
+#!/bin/bash
+
+set -e
+
+echo "Step 1"
+
+ls /wrong-folder
+
+echo "Step 2"

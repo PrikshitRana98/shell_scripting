@@ -8,9 +8,24 @@ function hello() {
 
 hello
 
-install_script() {
+print_existuser_script() {
     echo " local variable is $1"
+
+    echo "List of users:"
+    echo "--------------"
+
+    # cut -d: -f1 /etc/passwd
+    dscl . list /Users
+
+    echo "List of users with UniqueID >= 501:"
+    echo "-------------------------------------"
+
+    dscl . list /Users UniqueID | awk '$2 >= 501 {print $1}'
+
+    echo "-------------------------------------"
+
+    dscl . list /Users UniqueID
 }
 
-install_script dsf
+print_existuser_script dsfsdf
 
